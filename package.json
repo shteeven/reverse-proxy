@@ -1,0 +1,18 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "description": "Reverse proxy-server for the Smart-Reporting environment.",
+  "scripts": {
+    "start": "cd dev && docker-compose up --build",
+    "start:dev": "npm run start",
+    "start:prod": "cd prod && docker-compose up --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Stevenbarnhurst@bitbucket.org/convergys/reverse-proxy.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/convergys/reverse-proxy#readme"
+}

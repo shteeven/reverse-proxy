@@ -5,6 +5,9 @@
 *.tmPreferences.cache
 *.stTheme.cache
 
+# NPM
+npm-debug.log
+
 # workspace files are user-specific
 *.sublime-workspace
 
