@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cd dev && docker-compose up --build",
     "start:dev": "npm run start",
-    "start:prod": "cd prod && docker-compose up --build",
+    "start:prod": "cd prod && docker-compose up --build --force-recreate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
