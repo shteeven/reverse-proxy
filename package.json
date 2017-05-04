@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Reverse proxy-server for the Smart-Reporting environment.",
   "scripts": {
-    "start": "cd dev && docker-compose up --build",
+    "start": "cd dev && node server.js",
     "start:dev": "npm run start",
     "start:prod": "cd prod && docker-compose up --build --force-recreate",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,9 @@
   },
   "author": "",
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/convergys/reverse-proxy#readme"
+  "homepage": "https://bitbucket.org/convergys/reverse-proxy#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "redbird": "^0.6.15"
+  }
 }

@@ -1,0 +1,20 @@
+var express = require('express');
+var app = express();
+var httpProxy = require('http-proxy');
+var apiProxy = httpProxy.createProxyServer();
+var resourceServer = 'http://localhost:3030',
+  appServer = 'http://localhost:4220';
+
+app.all("/api/*", function(req, res) {
+  console.log('redirecting to ' + resourceServer);
+  apiProxy.web(req, res, {target: resourceServer});
+});
+
+app.all("/*", function(req, res) {
+  console.log('redirecting to ' + appServer);
+  apiProxy.web(req, res, {target: appServer});
+});
+
+app.listen(4200);
+
+
