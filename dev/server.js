@@ -15,6 +15,9 @@ app.all("/*", function(req, res) {
   apiProxy.web(req, res, {target: appServer});
 });
 
-app.listen(4200);
+app.listen(4200, function(err, res) {
+  if (err) console.log(err);
+  console.log('listening on 4200');
+});
 
 
