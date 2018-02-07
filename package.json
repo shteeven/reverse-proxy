@@ -1,7 +1,7 @@
 {
   "name": "proxy-server",
   "version": "1.0.0",
-  "description": "Reverse proxy-server for the Smart-Reporting environment.",
+  "description": "Reverse proxy server.",
   "scripts": {
     "start": "cd dev && node server.js",
     "start:dev": "npm run start",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Stevenbarnhurst@bitbucket.org/convergys/reverse-proxy.git"
+    "url": "https://github.com/shteeven/reverse-proxy.git"
   },
   "author": "",
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/convergys/reverse-proxy#readme",
+  "homepage": "",
   "dependencies": {
     "express": "^4.15.2",
     "redbird": "^0.6.15"

@@ -20,7 +20,7 @@ $ yarn
 ```
 Ensure the network is created (only needs to be done once)"
 ```
-$ docker network create sr_network
+$ docker network create a_network
 ```
 To start server run
 ```

@@ -3,15 +3,15 @@ version: '3'
 services:
   reverseproxy:
     build: .
-    container_name: proxyserver_prod
+    container_name: proxy_server_prod
     ports: ["4200:80"]
-    restart: always
-    networks: ["sr_network"]
+#    restart: always
+    networks: ["a_network"]
     external_links:
-      - graphql
-      - srwa-server
+      - api-server
+      - app-server
 
 networks:
   sr_network:
     external:
-      name: sr_network
+      name: a_network

@@ -6,6 +6,7 @@ var resourceServer = 'http://localhost:3030',
   appServer = 'http://localhost:4220';
 
 app.all("/api/*", function(req, res) {
+  console.log(req);
   console.log('redirecting to ' + resourceServer);
   apiProxy.web(req, res, {target: resourceServer});
 });
