@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var httpProxy = require('http-proxy');
 var apiProxy = httpProxy.createProxyServer();
-var resourceServer = 'http://localhost:3030',
-  appServer = 'http://localhost:4220';
+var resourceServer = 'http://localhost:60348/',
+  appServer = 'http://localhost:51699';
 
 app.all("/api/*", function(req, res) {
   console.log(req);
